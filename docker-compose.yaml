@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+    server:
+      build: ./TFG-backend
+      ports:
+       - "8080:8080" 
+    client:
+        build: ./TFG-frontend
+        ports:
+        - "4200:4200"
+        environment:
+         - SYNCFUSION_LICENSE="***REMOVED***"
