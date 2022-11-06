@@ -1,6 +1,6 @@
 [submodule "TFG-frontend"]
 	path = TFG-frontend
-	url = git@github.com:ins426/TFG-frontend.git
+	url = https://github.com/ins426/TFG-frontend.git
 [submodule "TFG-backend"]
 	path = TFG-backend
-	url = git@github.com:ins426/TFG-backend.git
+	url = https://github.com/ins426/TFG-backend.git
