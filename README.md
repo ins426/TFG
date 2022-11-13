@@ -12,12 +12,26 @@ This project's code is divided into frontend and backend part, each one with its
 2. [DayDay backend](https://github.com/ins426/TFG-backend)
 ___
 ## Tools 🧰
-- [Docker-compose](https://docs.docker.com/compose) and [Docker](https://www.docker.com/) were used to facilitate deploy. In order to launch this platform, execute the following commands on your terminal:
+- [Docker-compose](https://docs.docker.com/compose) and [Docker](https://www.docker.com/) were used to facilitate deployment. In order to launch this platform, there are some requirements. Let's see backend configuration:
+  1. Firstly, execute ```git clone git@github.com:ins426/TFG.git``` on your terminal and a new directory called ```TFG``` is created.
+  2. **Database configuration**: In  [MongoDB Atlas](https://www.mongodb.com/es/atlas) create a database named ```dd_db``` and two collections: ```appointments``` and ```users```. After that, create a ```.env``` file in TFG/TFG-backend and add ```MONGODB_ATLAS_USER=<your_user>``` and ```MONGODB_ATLAS_PASSWORD=<your_password>```. Make sure that your IP is in your database's whitelist IPs.
+  3. **Nodemailer configuration**: Choose or create a gmail account and go to **Settings > Security > Recovery phone/Recovery email**, choose **Mail** and **Mac** to select the app and device you want to generate the password for and finally in the ```.env``` file add ```CONTACT_EMAIL=<your_email``` and ```PASSWORD_EMAIL=<generated_password>```
+  4. **Auth secrets configuration**: Execute the following commands on your terminal to generate a secret for authorization processes:
+      ```bash
+        $ node
+        $ require('crypto').randomBytes(64).toString('hex')
+      ```
+      Now, copy and paste the generated string in the ```.env``` file as follows ```AUTH_TOKEN_SECRET=<generated_string>```.
+
+To configurate frontend you will need a [Syncfusion license](https://www.syncfusion.com). Once you have one, go to ```TFG-frontent/src/environments/environment.ts``` and add ```SYNCFUSION_LICENSE=<license>```
+
+Finally, execute these commands on your terminal from TFG/ directory:
 ```bash
-$ git clone git@github.com:ins426/TFG.git
 $ docker-compose build
 $ docker-compose up
 ```
+
+Now, you will be able to access to the platform through ```localhost:4200```
 ___
 ## Documentation 📖
 Project's documentation can be found [here](https://github.com/ins426/TFG/tree/main/Memoria). In order to generate documentation in PDF format run the following commands on your terminal:
