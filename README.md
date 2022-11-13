@@ -7,9 +7,9 @@ ___
 After seven years of Carmen Verdejo clinic's opening, their personnel has decided that it is time to progress and to put faith in platforms that can speed up those slow administrative processes, such as clinic appointments. It is common for many companies, and specially the small ones, to be reluctant to change, they don't trust other solutions for their tasks apart from the tranditional ones. In this case, Carmen Verdejo clinic has tested some tools for their appointment scheduling, general as well as specific ones. On the one hand, the general ones were too complicated to adapt for such as simple user flow. On the other hand, specific software products offered too many funcionalities, they were expensive and the most important factor, it was really hard to learn how to use them. That's how this project was born, it aims to create an intuitive platform for scheduling appointments. In this platform, with a role system for permission management, users will be able to create, edit and remove appointments, so current traditional scheduling appointments methodology is sped up for those tasks.
 ___
 ## Code 🖥️
-This project's code is divided into frontend and backend part, each one with its own repository:
-1. [DayDay frontend](https://github.com/ins426/TFG-frontend)
-2. [DayDay backend](https://github.com/ins426/TFG-backend)
+This project's code is divided into frontend and backend part that conforms the chosen stack which is **MEAN stack** (MongoDB, Express.js, Angular and Node.js). Each part, frontend and backend has its own repository:
+1. [DayDay frontend](https://github.com/ins426/TFG-frontend), it represents the 'A' initial.
+2. [DayDay backend](https://github.com/ins426/TFG-backend), it represents the 'M','E','N' initials.
 ___
 ## Tools 🧰
 - [Docker-compose](https://docs.docker.com/compose) and [Docker](https://www.docker.com/) were used to facilitate deployment. In order to launch this platform, there are some requirements. Let's see backend configuration:
