@@ -11,6 +11,14 @@ This project's code is divided into frontend and backend part, each one with its
 1. [DayDay frontend](https://github.com/ins426/TFG-frontend)
 2. [DayDay backend](https://github.com/ins426/TFG-backend)
 ___
+## Tools 🧰
+- [Docker-compose](https://docs.docker.com/compose) and [Docker](https://www.docker.com/) were used to facilitate deploy. In order to launch this platform, execute the following commands on your terminal:
+```bash
+$ git clone git@github.com:ins426/TFG.git
+$ docker-compose build
+$ docker-compose up
+```
+___
 ## Documentation 📖
 Project's documentation can be found [here](https://github.com/ins426/TFG/tree/main/Memoria). In order to generate documentation in PDF format run the following commands on your terminal:
 ```bash
