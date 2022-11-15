@@ -1,0 +1,33 @@
+\chapter{Conclusiones y trabajos futuros}
+En este último capítulo se abordan las conclusiones obtenidas en este proyecto tras el proceso de desarrollo software de un prototipo para un cliente del mundo real, la clínica Carmen Verdejo. Además, para concluir se listarán posibles trabajos futuros para el proyecto.
+
+\section{Conclusiones}
+El objetivo del proyecto era el de crear una plataforma que cubriera las necesidades de la clínica Carmen Verdejo en cuanto a la gestión de citas. Teniendo esto presente, tras haber analizado distintas soluciones para ello en el Capítulo \ref{estado-arte} y haber recogido sus pros y contras para el posterior desarrollo de la plataforma DayDay de este proyecto podemos destacar los siguientes aspectos:
+
+\begin{itemize}
+    \item La adaptación de herramientas generales a casos muy específicos, como es el de la clínica, conlleva a tener ciertas limitaciones en cuanto a funcionalidad que implican finalmente gastar grandes cantidades de dinero al año o llevar a cabo adaptaciones muy complejas a un flujo de usuario tan simple. El precio de DayDay a largo plazo quedaría amortizado en comparación al precio de las otras plataformas ya analizadas en el Capitulo \ref{estado-arte}, pues anualmente sólo cuesta con el despliegue y el dominio un total de 383€.
+    \item Ha sido evidente que las soluciones específicas analizadas no han realizado un correcto estudio de sus usuarios y del mercado. Esto se refleja en las interfaces tan poco intuitivas de las plataformas y en en el exceso de funcionalidades añadidas que posiblemente sean usadas por un ínfimo porcentage de usuarios. Esto evoca a concluir que en los inicios de cualquier producto software el equipo de desarrollo se ha de centrar en perfeccionar la funcionalidad básica y en estudiar la aceptación por parte de sus usuarios. Esto ahorrará tiempo, esfuerzo, dinero y mayor satisfacción por parte de los usuarios en el uso del producto.
+    \item La elección del componente ''Schedule'' de Angular de Syncfusion finalmente ha evocado a la alteración de la planificación inicial planteada. Esto se ha debido principalmente a las dificultades encontradas en su ''moldeado'' para ser adaptado a los requisitos de DayDay. Por ello, la metodología escogida fue acertada para adaptar el proyecto a posibles obstáculos. Sin embargo, esto deja claro que desarrollar un componente desde cero de este tipo podría haber facilitado considerablemente el desarrollo en lugar de utilizar uno ya desarrollado.
+    \item El diseño modular de la plataforma ha permitido facilitar su implementación, gracias a que han podido ser reutilizados y lo mejor, facilitar la posible adición de nuevas funcionalidades.
+\end{itemize}
+
+\section{Trabajos futuros}
+ DayDay se presenta a la clínica como un prototipo cuyos recursos de infraestructura son limitados ya que han sido financiados por la estudiante, y por supuesto está sujeto a cambios de diseño si se deseara. \bigskip
+
+ Así pues, los posibles trabajos que extenderían DayDay son:
+
+ \begin{itemize}
+     \item Mejora de las características de la instancia de AWS
+     \item Reserva de un dominio de primer nivel más común como ''.com'' o ''.es'' para mejorar el SEO de la página, para mejorar el posicionamiento en las búsquedas de agendas o calendarios online en los buscadores \cite{kaushal2019seo} . 
+     \item Notificaciones por correo electrónico y por la plataforma de citas a sus usuarios.
+     \item Recomendación de horas para citas en función de la disponibilidad horaria de los pacientes.
+     \item Adición de festivos y vacaciones al calendario.
+     \item Filtración de citas en el calendario por paciente o psicólogo.
+     \item Añadir un chat online con la clínica.
+     \item Integracion de la plataforma Google Calendar.
+     \item Mejora del diseño de la interfaz.
+     \item Subida de archivos de pacientes.
+ \end{itemize}
+
+Como se ve, a este producto software se le pueden seguir añadiendo funcionalidades de forma ilimitada. DayDay surgió para agilizar la gestión de citas de una clínica, sin embargo su potencial apunta maneras para poder llegar a gestionar un clínica al completo.
+ 

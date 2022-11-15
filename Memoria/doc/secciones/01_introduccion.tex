@@ -1,0 +1,52 @@
+\chapter{Introducción} \label{intro}
+Es bien sabido que el tiempo es de los recursos más valiosos y queridos por el ser humano, al igual que también es bien sabido que se trata de algo irrecuperable. Es por esto que, desde las pequeñas pymes hasta las grandes empresas, consideran que su buena distribución es esencial para obtener la mayor eficiencia, beneficios y para alcanzar finalmente el éxito.\bigskip
+
+
+Carmen María Ramos Espejo, secretaria de la clínica de psicología Carmen Verdejo \footnote{\url{https://carmenverdejo.com/}}, ubicada en el Camino de los Abencerrajes 17 en Granada, conoce muy bien el reto que supone conseguir la mayor optimización de tiempo posible a la hora de coordinar una agenda para un gran número de pacientes entre los psicólogos de la clínica. Esto se debe a que actualmente para la gestión de citas Carmen Verdejo tiene una metodología tradicional que consta de una agenda online basada en Google Calendar construida a partir de llamadas por teléfono, contacto presencial, SMS e emails. Es claro que dicha metodología resulta lenta y que, como manifiesta Carmen María en ocasiones, ha producido malentendidos y confusiones a pacientes con sus citas.\bigskip
+
+
+\section{Motivación}
+Tras 7 años dando cita a sus pacientes con la metodología descrita anteriormente la clínica Carmen Verdejo ha decidido que es momento de evolucionar, pues modernizarse significa mantenerse competitivo. \bigskip
+
+Como se ha expuesto anteriormente, Carmen María, secretaria de la clínica, indica que con las herramientas utilizadas actualmente para administrar la agenda de los psicólogos, en ocasiones se producen confusiones por parte de los pacientes con sus citas o errores en las propias herramientas. Además, añade que no todo el equipo sabe manejar las herramientas correctamente y afirma que se podrían ahorrar tiempo y recursos haciendo uso de una herramienta especializada para la gestión de citas. \bigskip
+
+El alcance que provee un sistema de gestión de citas a un negocio en el mercado es mucho más del que nos podemos imaginar. Leyendo artículos como el realizado por la experta en \textit{Business-to-Business} Astrid Eira \footnote{\url{https://financesonline.com/appointment-scheduling-statistics}}, quien está especializada en el nicho del Software como Servicio, podemos percatarnos de la popularidad de este tipo de sistemas. En dicho artículo encontramos las estadísticas recogidas por otros sistemas de gestión de citas como Bookedin, el cual en el año 2019 publicó que se realizaron 1.547.239 citas a través de la plataforma, cifra que desde luego no deja indiferente a nadie. Asimismo en la investigación llevada a cabo por Habibi et al. \cite{Habibi2019} para comprobar el efecto de la gestión de citas online frente a la tradicional en distintos centros médicos, obtuvo efectos especialmente positivos en las siguientes métricas: \bigskip
+
+\begin{table}[H]
+\begin{tabular}{llll}
+\hline
+\multicolumn{1}{c}{\textbf{Métrica}}                      & \textbf{Tradicional} & \textbf{Online} & \textbf{P valor} \\ \hline
+\textbf{Tiempo de espera de los pacietes (minutos)}       & 38.2                 & 23.8            & .043             \\
+\textbf{Porcentaje de no asistencia de los pacientes(\%)} & 25                   & 11              & .043             \\
+\textbf{Puntualidad de los médicos (minutos)}             & -30                  & -14.2           & .783             \\ \hline
+\end{tabular}
+\caption{Métricas obtenidas en el estudio realizado por Habibi et al. \cite{Habibi2019} antes y después de aplicar un sistema de gestión de citas online en centros médicos}
+\label{table:r7000}
+\end{table}
+
+Todo esto sumado a que el INE\footnote{\url{https://www.ine.es/ss/Satellite?L=es_ES&c=INESeccion_C&cid=1259925528782&p=1254735110672&pagename=ProductosYServicios\%2FPYSLayout}} publicó que el 93.9\% de la población española entre 16 y 74 años usó Internet en el año 2021, implica inevitablemente el cambio del medio tradicional al digital para sobrevivir a la actual gran competitividad empresarial y así lo expone Ana María Zuluaga Salgado \cite{zuluaga2019generadores}: \textit{''lo conseguido en el pasado no garantiza la supervivencia de la
+organización en el futuro''} haciendo referencia al constante cambio al que se encuentran sujetas actualmente las empresas.\bigskip
+
+La clínica es consciente de todos estos factores y está dispuesta a llevar a cabo un cambio en su sistema de citas. Sin embargo, ningún sistema comercial, tanto genérico como específico, ha demostrado cubrir todas sus necesidades o si lo hacía el coste resultada demasiado alto. \bigskip
+
+Es por esto que resulta una gran motivación crear un producto software para Carmen Verdejo capaz de mejorar la experiencia de su personal y pacientes y con tal potencial para el futuro de la clínica. Es por tanto el objetivo de este proyecto, el de recoger todas las necesidades referentes a la gestión de citas en la clínica y con ello hacer un buen uso del recurso más valioso que poseen su personal y pacientes, el tiempo. \bigskip
+
+
+\section{Objetivos del proyecto}
+El \textbf{objetivo general} del proyecto es el de crear una plataforma online que cubra las necesidades de la clínica Carmen Verdejo para la gestión de citas. Para cumplir con dicha finalidad se han descrito los siguientes subobjetivos:
+
+\begin{itemize}
+    \item \textbf{Subobjetivo 1}: Crear una aplicación cliente-servidor que permita al personal de la clínica llevar a cabo operaciones CRUD (Crear, Leer Actualizar y Borrar, en inglés ''Create,Read,Update, Delete'') con las citas de sus pacientes.
+    \item \textbf{Subobjetivo 2}: Permitir a los pacientes a través de la aplicación realizar operaciones CRUD con sus citas.
+\end{itemize}
+
+\section{Estructura de la memoria}
+\begin{itemize}
+    \item \textbf{Capítulo 1. Introducción}: Breve introducción del proyecto describiendo los problemas y necesidades actuales de la clínica Carmen Verdejo en cuanto a la gestión de citas, los motivos por los que es llevado a cabo éste mismo y sus objetivos.
+    \item \textbf{Capítulo 2. Estado del arte}: Análisis del caso de estudio, como también de las soluciones generales y específicas para gestión de citas.
+    \item \textbf{Capítulo 3. Planificación}: Especificación de la metodología de desarrollo escogida y temporización del proyecto. En adición se explica la gestión de los recursos del proyecto, junto con un análisis de riesgos y un presupuesto.
+    \item \textbf{Capítulo 4. Diseño}: Explicación del diseño de la arquitectura desglosada en los diseños de la base de datos, servidor y vista.  
+    \item \textbf{Capítulo 5. Implementación y pruebas}: Especificación de las herramientas a utilizar durante el desarrollo, explicación del proceso de implementación y pruebas realizadas al código.
+    \item \textbf{Capítulo 6. Despliegue}: Explicación de las herramientas utilizadas para el despliegue y proceso el proceso llevado a cabo para el mismo.
+    \item \textbf{Capítulo 7. Conclusiones y posibles ampliaciones}: Exposición de las conclusiones obtenidas a lo largo del desarrollo del proyecto y sugerencias de posibles trabajos futuros.
+\end{itemize}
